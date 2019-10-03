@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pad_lyt">15dp</dimen>
+    <dimen name="sz_jdl">16sp</dimen>
+    <dimen name="sz_rls">14sp</dimen>
+    <dimen name="sz_sin">12sp</dimen>
+    <dimen name="sz_ply">13sp</dimen>
+    <dimen name="wd_img">190dp</dimen>
+    <dimen name="hg_img">300dp</dimen>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000505</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="jdl_film">#FFC107</color>
+    <color name="rls">#8BEC1C</color>
+    <color name="sin">#ffffff</color>
+    <color name="btg_film">#667CF0</color>
+    <color name="ply">#05C7B3</color>
+    <color name="ktg_flm">#FD0707</color>
+    <color name="tbl_ply">#C2BDBD</color>
+</resources>

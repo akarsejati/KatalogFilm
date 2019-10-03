@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/pad_lyt"
+    tools:context=".DetilKatalog">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="@dimen/wd_img"
+        android:layout_height="@dimen/hg_img"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_jdlFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:text="@string/itm_jdl_film"
+        android:textColor="@color/sin"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sz_jdl"/>
+
+    <TextView
+        android:id="@+id/tv_kat"
+        android:layout_below="@+id/tv_jdlFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:textSize="@dimen/sz_rls"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/ktg_flm"
+        android:text="@string/itm_kat"/>
+
+    <TextView
+        android:id="@+id/lbl_sta"
+        android:layout_below="@+id/tv_kat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:textSize="@dimen/sz_rls"
+        android:text="@string/lbl_sta"
+        android:textColor="@color/jdl_film"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lbl_drs"
+        android:layout_below="@+id/tv_kat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lbl_sta"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:textSize="@dimen/sz_rls"
+        android:text="@string/lbl_drs"
+        android:textColor="@color/jdl_film"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lbl_sta"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/jdl_film">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/sz_sin"
+            android:text="@string/itm_sta"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lbl_drs"
+        android:layout_toEndOf="@+id/card1"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/jdl_film">
+
+        <TextView
+            android:id="@+id/tv_drs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/sz_sin"
+            android:text="@string/itm_drs"
+            android:textStyle="bold"
+            android:textColor="@color/ktg_flm"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/lbl_rls"
+        android:layout_below="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:textSize="@dimen/sz_rls"
+        android:textAllCaps="false"
+        android:text="@string/lbl_rls"
+        android:textColor="@color/jdl_film"
+        android:textStyle="bold"
+        android:labelFor="@+id/tv_bhs"/>
+
+    <TextView
+        android:id="@+id/tv_rls"
+        android:layout_below="@+id/lbl_rls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:textSize="@dimen/sz_rls"
+        android:textAllCaps="false"
+        android:text="@string/itm_rls"
+        android:textColor="@color/sin"/>
+
+    <TextView
+        android:id="@+id/lbl_bhs"
+        android:layout_below="@+id/tv_rls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:textSize="@dimen/sz_rls"
+        android:textAllCaps="false"
+        android:text="@string/lbl_bhs"
+        android:textColor="@color/jdl_film"
+        android:textStyle="bold"
+        android:labelFor="@+id/tv_bhs"/>
+
+    <TextView
+        android:id="@+id/tv_bhs"
+        android:layout_below="@+id/lbl_bhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:layout_marginStart="@dimen/pad_lyt"
+        android:textSize="@dimen/sz_rls"
+        android:textAllCaps="false"
+        android:text="@string/itm_bhs"
+        android:textColor="@color/rls"/>
+
+    <TextView
+        android:id="@+id/lbl_aktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:text="@string/lbl_ply"
+        android:textAlignment="textStart"
+        android:textColor="@color/jdl_film"
+        android:textSize="@dimen/sz_sin"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:id="@+id/tbl_img"
+        android:layout_below="@+id/lbl_aktor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginEnd="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_cast1"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_cast1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/itm_cast1"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/sz_sin"
+                    android:maxLines="2"/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginEnd="5dp">
+                <ImageView
+                    android:id="@+id/iv_cast2"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_cast2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/itm_cast2"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/sz_sin"
+                    android:maxLines="2"/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginEnd="5dp">
+                <ImageView
+                    android:id="@+id/iv_cast3"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_cast3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/itm_cast3"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/sz_sin"
+                    android:maxLines="2"/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginEnd="5dp">
+                <ImageView
+                    android:id="@+id/iv_cast4"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_cast4"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/itm_cast4"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/sz_sin"
+                    android:maxLines="2"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginEnd="5dp">
+                <ImageView
+                    android:id="@+id/iv_cast5"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_cast5"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/itm_cast5"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/sz_sin"
+                    android:maxLines="2"/>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/lbl_sin"
+        android:layout_below="@+id/tbl_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lbl_sin"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sz_jdl"
+        android:textColor="@color/jdl_film"/>
+
+    <TextView
+        android:id="@+id/tv_sin"
+        android:layout_below="@+id/lbl_sin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/itm_sin"
+        android:textAlignment="textStart"
+        android:textColor="@color/sin"
+        android:textSize="@dimen/sz_sin"
+        android:textAllCaps="false"
+        android:textStyle="normal"/>
+
+
+</RelativeLayout>
+</ScrollView>
